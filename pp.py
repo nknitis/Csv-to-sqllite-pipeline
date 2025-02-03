@@ -60,17 +60,17 @@ conn.close()
 print("Data successfully loaded into the database!")
 
 
-# # Connect to the SQLite database
-# conn = sqlite3.connect('people.db')
-# cursor = conn.cursor()
+# Connect to the SQLite database
+conn = sqlite3.connect('people.db')
+cursor = conn.cursor()
 
-# # Query the data from the table
-# cursor.execute("SELECT * FROM people")
-# rows = cursor.fetchall()
+# Query the data from the table
+cursor.execute("SELECT * FROM people")
+rows = cursor.fetchall()
 
-# # Display the rows
-# for row in rows:
-#     print(row)
+# Display the rows
+for row in rows:
+    print(row)
 
 # # Close the connection
 # conn.close()
